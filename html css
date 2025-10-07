@@ -1,1 +1,186 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stylové Oblečení </title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --light-bg: #f4f4f8;
+      --text: #222;
+      --muted: #666;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+    }
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+    nav a:hover { color: var(--primary); }
 
+    .hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(135deg, #fff, #e8f0ff);
+      border-bottom: 1px solid #ddd;
+    }
+    .hero h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+    .hero p {
+      color: var(--muted);
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    .hero button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .hero button:hover { background: #0f6de0; }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .product {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+    .product:hover { transform: translateY(-4px); }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .product h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+    .product p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 10px;
+      flex: 1;
+    }
+    .price {
+      font-weight: bold;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .product button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      align-self: flex-start;
+    }
+    .product button:hover { background: #0f6de0; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylové Oblečení</h1>
+    <nav>
+      <a href="about.html">Domů</a>
+      <a href="shop.html">Obchod</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Moderní móda pro každý den</h2>
+    <p>Stylové a pohodlné kousky, které snadno zkombinujete s čímkoli.</p>
+    <button>Prohlédnout kolekci</button>
+  </section>
+
+  <section class="products">
+    <div class="product">
+      <img src="https://cdn.myshoptet.com/usr/www.lapetite.cz/user/shop/big/38328_tricko-ragman-403080-bile--velikost-l.jpg?662a6a5a" alt="tričko">
+      <div class="product-info">
+        <h3>Bílé tričko</h3>
+        <p>Lehké a příjemné tričko z bavlny.</p>
+        <div class="price">399 Kč</div>
+        <button>Přidat do košíku</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://www.burocs.com/cdn/shop/files/4938-BR2325-Grey-Basic-Oversized-Hoodie1_1.jpg?v=1703159726&width=1428" alt="mikina">
+      <div class="product-info">
+        <h3>Šedá mikina</h3>
+        <p>Univerzální mikina pro volný čas i práci.</p>
+        <div class="price">899 Kč</div>
+        <button>Přidat do košíku</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.VC3aaV6KKOq-ITx2hUgfTQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="čepice">
+      <div class="product-info">
+        <h3>Černá čepice</h3>
+        <p>Měkká čepice, ideální na chladné dny.</p>
+        <div class="price">299 Kč</div>
+        <button>Přidat do košíku</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Stylové Oblečení – jednoduchý e-shop s módou.
+  </footer>
+</body>
+</html>
