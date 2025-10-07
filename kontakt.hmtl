@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | Stylové Oblečení</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --light-bg: #f5f7fa;
+      --text: #222;
+      --muted: #666;
+      --radius: 10px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+    }
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+    nav a:hover { color: var(--primary); }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .contact-info {
+      text-align: center;
+      color: var(--text);
+      line-height: 1.8;
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: var(--muted);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylové Oblečení</h1>
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="shop.html">Obchod</a>
+      <a href="kontakt.html" style="color: var(--primary);">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Kontakt</h2>
+    <div class="contact-info">
+      <p><strong>E-mail:</strong> <a href="mailto:info@stylove-obleceni.cz">info@stylove-obleceni.cz</a></p>
+      <p><strong>Telefon:</strong> +420 123 456 789</p>
+      <p><strong>Adresa:</strong> Na Příkopě 15, Praha 1, Česká republika</p>
+      <p><strong>Otevírací doba:</strong> Po–Pá 9:00–18:00</p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Stylové Oblečení – kontaktujte nás kdykoliv.
+  </footer>
+</body>
+</html>
