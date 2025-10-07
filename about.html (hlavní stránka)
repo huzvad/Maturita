@@ -1,115 +1,140 @@
-<!doctype html>
-<html lang="cs">
+<!doctype html> <!-- Říká prohlížeči, že používáme moderní HTML5 -->
+<html lang="cs"> <!-- Celý dokument je v češtině (důležité pro SEO a čtečky obrazovky) -->
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Stylové Oblečení </title>
-  <style>
-    :root {
-      --primary: #1e90ff;
-      --light-bg: #f4f4f8;
-      --text: #222;
-      --muted: #666;
-      --radius: 10px;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--light-bg);
-      color: var(--text);
-    }
-    header {
-      background: #fff;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
-    header h1 {
-      font-size: 22px;
-      margin: 0;
-      color: var(--primary);
-    }
-    nav a {
-      margin-left: 15px;
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-    }
-    nav a:hover { color: var(--primary); }
+  <meta charset="utf-8"> <!-- Nastavení znakové sady, aby fungovala čeština -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responzivita pro mobily -->
+  <title>Stylové Oblečení </title> <!-- Text, který se ukáže v záložce prohlížeče -->
 
-    .hero {
-      text-align: center;
-      padding: 50px 20px 30px;
-      background: linear-gradient(135deg, #fff, #e8f0ff);
-      border-bottom: 1px solid #ddd;
+
+
+  <style>
+    /* 🎨 CSS proměnné – definují základní barvy a vlastnosti pro celý web */
+    :root {
+      --primary: #1e90ff; /* hlavní barva (modrá) */
+      --light-bg: #f4f4f8; /* světle šedé pozadí */
+      --text: #222; /* tmavě šedý text */
+      --muted: #666; /* světlejší text (např. popisky) */
+      --radius: 10px; /* univerzální zaoblení rohů */
     }
+
+    * { box-sizing: border-box; } /* Všechny prvky se počítají včetně paddingu a borderu */
+
+    body {
+      margin: 0; /* Odstraní výchozí okraje stránky */
+      font-family: 'Segoe UI', sans-serif; /* Nastaví font */
+      background: var(--light-bg); /* Použije světle šedé pozadí */
+      color: var(--text); /* Nastaví základní barvu textu */
+    }
+
+    /* 🔝 Hlavička webu */
+    header {
+      background: #fff; /* Bílá barva pozadí */
+      padding: 15px 30px; /* Vnitřní okraje */
+      display: flex; /* Flexbox – prvky vedle sebe */
+      justify-content: space-between; /* Logo vlevo, navigace vpravo */
+      align-items: center; /* Vertikální zarovnání */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Jemný stín pod hlavičkou */
+    }
+
+    header h1 {
+      font-size: 22px; /* Velikost textu loga */
+      margin: 0;
+      color: var(--primary); /* Modrá barva pro zvýraznění */
+    }
+
+    nav a {
+      margin-left: 15px; /* Mezera mezi odkazy */
+      text-decoration: none; /* Bez podtržení */
+      color: var(--text); /* Barva textu */
+      font-weight: 600; /* Tučnější text */
+    }
+
+    nav a:hover { color: var(--primary); } /* Po přejetí myší zmodrá */
+
+    /* 🖼️ Úvodní sekce (hero) */
+    .hero {
+      text-align: center; /* Zarovnání na střed */
+      padding: 50px 20px 30px; /* Okraje kolem textu */
+      background: linear-gradient(135deg, #fff, #e8f0ff); /* Světlý přechod */
+      border-bottom: 1px solid #ddd; /* Oddělení od zbytku stránky */
+    }
+
     .hero h2 {
-      font-size: 32px;
+      font-size: 32px; /* Velký nadpis */
       margin: 10px 0;
     }
+
     .hero p {
-      color: var(--muted);
+      color: var(--muted); /* Světlejší barva textu */
       font-size: 16px;
       margin-bottom: 20px;
     }
+
     .hero button {
-      background: var(--primary);
+      background: var(--primary); /* Modré tlačítko */
       color: #fff;
       border: none;
       padding: 10px 20px;
-      border-radius: var(--radius);
-      cursor: pointer;
+      border-radius: var(--radius); /* Zaoblené rohy */
+      cursor: pointer; /* Kurzor ruky po najetí */
       font-size: 15px;
     }
-    .hero button:hover { background: #0f6de0; }
 
+    .hero button:hover { background: #0f6de0; } /* Tmavší modrá při hoveru */
+
+    /* 🛍️ Sekce s produkty */
     .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-      max-width: 1000px;
-      margin: 40px auto;
+      display: grid; /* Mřížka pro produkty */
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); /* Automatické přizpůsobení */
+      gap: 10px; /* Mezera mezi produkty */
+      max-width: 1000px; /* Maximální šířka celé sekce */
+      margin: 40px auto; /* Vycentrování sekce */
       padding: 0 20px;
     }
+
     .product {
       background: #fff;
       border-radius: var(--radius);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Stín kolem produktu */
+      overflow: hidden; /* Skryje přesahující obsah */
       display: flex;
       flex-direction: column;
-      transition: transform 0.2s;
+      transition: transform 0.2s; /* Plynulý efekt při hoveru */
     }
-    .product:hover { transform: translateY(-4px); }
+
+    .product:hover { transform: translateY(-4px); } /* Zvednutí při hoveru */
+
     .product img {
-      width: 100%;
+      width: 100%; /* Obrázek vyplní šířku */
       height: 200px;
-      object-fit: cover;
+      object-fit: cover; /* Zachová poměr stran a vyplní rám */
     }
+
     .product-info {
       padding: 15px;
-      flex: 1;
+      flex: 1; /* Zabere zbylý prostor */
       display: flex;
       flex-direction: column;
     }
+
     .product h3 {
       margin: 0 0 6px;
       font-size: 17px;
     }
+
     .product p {
       color: var(--muted);
       font-size: 14px;
       margin-bottom: 10px;
       flex: 1;
     }
+
     .price {
-      font-weight: bold;
+      font-weight: bold; /* Zvýraznění ceny */
       color: var(--text);
       margin-bottom: 10px;
     }
+
     .product button {
       background: var(--primary);
       color: white;
@@ -117,10 +142,12 @@
       padding: 8px 12px;
       border-radius: var(--radius);
       cursor: pointer;
-      align-self: flex-start;
+      align-self: flex-start; /* Zarovnání tlačítka vlevo */
     }
-    .product button:hover { background: #0f6de0; }
 
+    .product button:hover { background: #0f6de0; } /* Hover efekt */
+
+    /* 👣 Patka webu */
     footer {
       text-align: center;
       padding: 20px;
@@ -130,26 +157,37 @@
       color: var(--muted);
     }
   </style>
+
+
+
+
 </head>
 <body>
+  <!-- 🔝 Hlavička s logem a navigací -->
   <header>
     <h1>Stylové Oblečení</h1>
     <nav>
+      <!-- href určuje, na jakou stránku se odkaz dostane -->
       <a href="about.html">Domů</a>
       <a href="shop.html">Obchod</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
+  <!-- 🖼️ Úvodní sekce (hero) -->
   <section class="hero">
     <h2>Moderní móda pro každý den</h2>
     <p>Stylové a pohodlné kousky, které snadno zkombinujete s čímkoli.</p>
-    <button>Prohlédnout kolekci</button>
+    <button>Prohlédnout kolekci</button> <!-- Tlačítko bez odkazu – můžeš ho později propojit -->
   </section>
 
+  <!-- 🛍️ Sekce s produkty -->
+  <h2 style="text-align:center; margin-top:40px;">Naše nejprodávanější kousky:</h2>
   <section class="products">
+    <!-- 🔹 1. produkt -->
     <div class="product">
-      <img src="https://cdn.myshoptet.com/usr/www.lapetite.cz/user/shop/big/38328_tricko-ragman-403080-bile--velikost-l.jpg?662a6a5a" alt="tričko">
+      <img src="https://cdn.myshoptet.com/usr/www.lapetite.cz/user/shop/big/38328_tricko-ragman-403080-bile--velikost-l.jpg?662a6a5a"
+           alt="tričko"> <!-- Obrázek produktu -->
       <div class="product-info">
         <h3>Bílé tričko</h3>
         <p>Lehké a příjemné tričko z bavlny.</p>
@@ -158,8 +196,10 @@
       </div>
     </div>
 
+    <!-- 🔹 2. produkt -->
     <div class="product">
-      <img src="https://www.burocs.com/cdn/shop/files/4938-BR2325-Grey-Basic-Oversized-Hoodie1_1.jpg?v=1703159726&width=1428" alt="mikina">
+      <img src="https://www.burocs.com/cdn/shop/files/4938-BR2325-Grey-Basic-Oversized-Hoodie1_1.jpg?v=1703159726&width=1428"
+           alt="mikina">
       <div class="product-info">
         <h3>Šedá mikina</h3>
         <p>Univerzální mikina pro volný čas i práci.</p>
@@ -168,8 +208,10 @@
       </div>
     </div>
 
+    <!-- 🔹 3. produkt -->
     <div class="product">
-      <img src="https://tse2.mm.bing.net/th/id/OIP.VC3aaV6KKOq-ITx2hUgfTQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="čepice">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.VC3aaV6KKOq-ITx2hUgfTQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3"
+           alt="čepice">
       <div class="product-info">
         <h3>Černá čepice</h3>
         <p>Měkká čepice, ideální na chladné dny.</p>
@@ -179,6 +221,7 @@
     </div>
   </section>
 
+  <!-- 👣 Patka webu -->
   <footer>
     © 2025 Stylové Oblečení – jednoduchý e-shop s módou.
   </footer>
