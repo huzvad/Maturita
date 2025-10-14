@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Maturita | Stylové Oblečení</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --light-bg: #f5f7fa;
+      --text: #222;
+      --muted: #666;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    h2, h3 {
+      color: var(--primary);
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: var(--muted);
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylové Oblečení</h1>
+    <nav>
+      <a href="index.html">Domů</a>
+      <a href="about.html">Obchod</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="maturita.html" style="color: var(--primary);">Maturita</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Webová prezentace projektu – Stylové Oblečení</h2>
+
+    <section>
+      <h3>Stručný popis projektu</h3>
+      <p>
+        Webová aplikace <strong>Stylové Oblečení</strong> představuje jednoduchý e-shop zaměřený na moderní a pohodlnou módu.
+        Projekt slouží jako ukázka propojení <strong>frontendové části (HTML, CSS)</strong> s <strong>backendem v Pythonu</strong> a <strong>databází</strong>,
+        která uchovává informace o produktech, zákaznících a objednávkách.
+      </p>
+      <p>
+        Stránky jsou vytvořeny v <strong>HTML5</strong> a stylovány pomocí <strong>CSS3</strong>. Web je responzivní a správně se zobrazuje
+        jak na počítači, tak na mobilních zařízeních.
+      </p>
+    </section>
+
+    <section>
+      <h3>Funkce programu</h3>
+      <ul>
+        <li><strong>Zobrazení nabídky produktů</strong> – hlavní stránka zobrazuje produkty (název, popis, cena, obrázek).</li>
+        <li><strong>Navigace mezi stránkami</strong> – menu obsahuje odkazy na <em>Domů</em>, <em>Obchod</em>, <em>Kontakt</em> a <em>Maturita</em>.</li>
+        <li><strong>Kontakt a informace o firmě</strong> – stránka <em>kontakt.html</em> obsahuje e-mail, adresu a otevírací dobu.</li>
+        <li><strong>Propojení s databází</strong> – Python (Flask/Django) obsluhuje dotazy a načítá data z databáze (např. SQLite/MySQL).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Ukázky použití</h3>
+      <ul>
+        <li>Uživatel otevře <em>index.html</em> a prohlédne si nabídku produktů.</li>
+        <li>Na stránce <em>Obchod</em> vidí kompletní seznam produktů z databáze.</li>
+        <li>Po kliknutí na „Přidat do košíku“ se data uloží do databáze pomocí Pythonu.</li>
+        <li>Na stránce <em>Kontakt</em> najde zákazník informace o firmě.</li>
+        <li>Stránka <em>Maturita</em> obsahuje popis a dokumentaci projektu.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Použité technologie</h3>
+      <ul>
+        <li><strong>Frontend:</strong> HTML5, CSS3 (responzivní design, CSS proměnné)</li>
+        <li><strong>Backend:</strong> Python (Flask nebo Django)</li>
+        <li><strong>Databáze:</strong> SQLite / MySQL – tabulky pro produkty, uživatele a objednávky</li>
+        <li><strong>Propojení:</strong> Python komunikuje s databází přes API endpointy (např. <code>/products</code>, <code>/cart</code>)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Shrnutí</h3>
+      <p>
+        Projekt <strong>Stylové Oblečení</strong> demonstruje tvorbu přehledné a moderní webové aplikace pro prezentaci a správu produktů.
+        Cílem je ukázat propojení webového rozhraní s databází a backendem v Pythonu, podobně jako fungují reálné e-shopy.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Stylové Oblečení – maturitní projekt webové aplikace.
+  </footer>
+</body>
+</html>
