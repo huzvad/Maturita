@@ -1,0 +1,56 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2">
+  <diagram name="Stránka-1" id="kl0reCuWlpt99NdUwIuR">
+    <mxGraphModel dx="1426" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="B27lzNTf7kKeV9BoAbmF-1" target="B27lzNTf7kKeV9BoAbmF-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-1" value="Vytvoření &lt;b&gt;GitHubu&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-2" value="Vytvoření &lt;b&gt;Webu&lt;/b&gt;&amp;nbsp;&lt;div&gt;CSS + HTML (PHP)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div&gt;- Popis Eshopu&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Autor&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Kolonky s oblečením&lt;/div&gt;&lt;div&gt;- Popis oblečení a cena&lt;/div&gt;&lt;div&gt;- Kategorie oblečen&lt;/div&gt;&lt;div&gt;- Fungující překlikávání na stránkách&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="264" y="125" width="150" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-3" value="Propojit s &lt;b&gt;Databází&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;- funkční košík a přihlašování&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="520" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="B27lzNTf7kKeV9BoAbmF-4" target="B27lzNTf7kKeV9BoAbmF-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-4" value="Téma + autor: &lt;b&gt;Eshop s oblečením&lt;/b&gt;&lt;div&gt;&lt;b&gt;(David Hužvár)&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="B27lzNTf7kKeV9BoAbmF-8" value="Propojit s &lt;b&gt;Pythnem&lt;/b&gt;&lt;div&gt;&lt;b&gt;- &lt;/b&gt;Umožňuje funkční košík&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="520" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="tNy8HqWGoLl1rCaTdqJp-3" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="B27lzNTf7kKeV9BoAbmF-8" target="B27lzNTf7kKeV9BoAbmF-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tNy8HqWGoLl1rCaTdqJp-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="B27lzNTf7kKeV9BoAbmF-2" target="B27lzNTf7kKeV9BoAbmF-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="260" as="sourcePoint" />
+            <mxPoint x="420" y="210" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tNy8HqWGoLl1rCaTdqJp-5" value="" style="endArrow=none;html=1;rounded=0;entryX=0.998;entryY=0.176;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.005;exitY=0.171;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="264" y="178.99999999999994" as="sourcePoint" />
+            <mxPoint x="412.9499999999998" y="179.7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tNy8HqWGoLl1rCaTdqJp-7" value="" style="endArrow=none;html=1;rounded=0;exitX=0.972;exitY=0.411;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.015;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="B27lzNTf7kKeV9BoAbmF-3" target="B27lzNTf7kKeV9BoAbmF-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="639.9999999999999" y="199.99999999999997" as="sourcePoint" />
+            <mxPoint x="520.36" y="205.34" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
