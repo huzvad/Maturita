@@ -84,8 +84,8 @@
   <header>
     <h1>Stylové Oblečení</h1>
     <nav>
-      <a href="index.html">Domů</a>
-      <a href="about.html">Obchod</a>
+      <a href="about.html">Domů</a>
+      <a href="obchod.html">Obchod</a>
       <a href="kontakt.html">Kontakt</a>
       <a href="maturita.html" style="color: var(--primary);">Maturita</a>
     </nav>
@@ -102,7 +102,7 @@
         která uchovává informace o produktech, zákaznících a objednávkách.
       </p>
       <p>
-        Stránky jsou vytvořeny v <strong>HTML5</strong> a stylovány pomocí <strong>CSS3</strong>. Web je responzivní a správně se zobrazuje
+        Stránky jsou vytvořeny v <strong>HTML</strong> a stylovány pomocí <strong>CSS</strong>. Web je responzivní a správně se zobrazuje
         jak na počítači, tak na mobilních zařízeních.
       </p>
     </section>
@@ -113,14 +113,14 @@
         <li><strong>Zobrazení nabídky produktů</strong> – hlavní stránka zobrazuje produkty (název, popis, cena, obrázek).</li>
         <li><strong>Navigace mezi stránkami</strong> – menu obsahuje odkazy na <em>Domů</em>, <em>Obchod</em>, <em>Kontakt</em> a <em>Maturita</em>.</li>
         <li><strong>Kontakt a informace o firmě</strong> – stránka <em>kontakt.html</em> obsahuje e-mail, adresu a otevírací dobu.</li>
-        <li><strong>Propojení s databází</strong> – Python (Flask/Django) obsluhuje dotazy a načítá data z databáze (např. SQLite/MySQL).</li>
+        <li><strong>Propojení s databází</strong> – Python obsluhuje dotazy a načítá data z databáze.</li>
       </ul>
     </section>
 
     <section>
       <h3>Ukázky použití</h3>
       <ul>
-        <li>Uživatel otevře <em>index.html</em> a prohlédne si nabídku produktů.</li>
+        <li>Uživatel otevře <em>about.html</em> a prohlédne si nabídku nejprodávanějších produktů.</li>
         <li>Na stránce <em>Obchod</em> vidí kompletní seznam produktů z databáze.</li>
         <li>Po kliknutí na „Přidat do košíku“ se data uloží do databáze pomocí Pythonu.</li>
         <li>Na stránce <em>Kontakt</em> najde zákazník informace o firmě.</li>
@@ -133,18 +133,65 @@
       <ul>
         <li><strong>Frontend:</strong> HTML5, CSS3 (responzivní design, CSS proměnné)</li>
         <li><strong>Backend:</strong> Python (Flask nebo Django)</li>
-        <li><strong>Databáze:</strong> SQLite / MySQL – tabulky pro produkty, uživatele a objednávky</li>
-        <li><strong>Propojení:</strong> Python komunikuje s databází přes API endpointy (např. <code>/products</code>, <code>/cart</code>)</li>
+        <li><strong>Databáze:</strong> MySQL – tabulky pro produkty, uživatele a objednávky</li>
+        <li><strong>Propojení:</strong> Python komunikuje s databází přes API endpointy (např. <code>/products</code>, <code>/cart</code>)</li> 
       </ul>
     </section>
 
     <section>
-      <h3>Shrnutí</h3>
+      <h3>Seznam použitých algoritmů a knihoven</h3>
+
+      <h4>1. Načtení produktů z databáze</h4>
       <p>
-        Projekt <strong>Stylové Oblečení</strong> demonstruje tvorbu přehledné a moderní webové aplikace pro prezentaci a správu produktů.
-        Cílem je ukázat propojení webového rozhraní s databází a backendem v Pythonu, podobně jako fungují reálné e-shopy.
+        Tento algoritmus zajišťuje načtení dat o produktech z databáze pomocí Pythonu a jejich zobrazení na stránce <em>Obchod</em>.
+        Backend provede SQL dotaz, načte všechny produkty a převede výsledek do formátu JSON, který odešle na frontend.
       </p>
+      <pre>
+Funkce nacti_produkty():
+    připoj_se_k_databazi()
+    vysledek = proveď_SQL_dotaz("SELECT * FROM produkty")
+    produkty = převod_na_JSON(vysledek)
+    vrať produkty
+      </pre>
+
+      <h4>2. Přidání produktu do košíku</h4>
+      <p>
+        Po kliknutí na tlačítko „Přidat do košíku“ odešle frontend požadavek na server, kde Python uloží vybraný produkt do databáze 
+        (nebo do dočasné tabulky košíku). Tento postup umožňuje sledovat, co si uživatel vybral.
+      </p>
+      <pre>
+Funkce pridat_do_kosiku(id_produktu, uzivatel):
+    připoj_se_k_databazi()
+    vloz_do_tabulky("kosik", id_produktu, uzivatel)
+    potvrď_změny()
+      </pre>
+
+      <h4>3. Výpočet celkové ceny objednávky</h4>
+      <p>
+        Algoritmus slouží ke spočítání konečné částky v nákupním košíku. 
+        Načte všechny položky, jejich ceny a vypočítá součet.
+      </p>
+      <pre>
+Funkce spocitej_celkovou_cenu(kosik):
+    celkem = 0
+    pro každou položku v kosik:
+        celkem += položka.cena * položka.mnozstvi
+    vrať celkem
+      </pre>
     </section>
+
+    <section>
+      <h3>Seznam autorů:</h3>
+      <p>
+      David Hužvár
+      </p>
+      <h3>Odkaz na GitHub:</h3>
+      <p>
+        <a href="https://github.com/huzvad/Maturita">GitHub</a>
+      </p>
+
+    </section>
+
   </main>
 
   <footer>
