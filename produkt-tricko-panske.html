@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pánské tričko – Stylové Oblečení</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --light-bg: #f4f4f8;
+      --text: #222;
+      --muted: #666;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    .product-detail {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      align-items: center;
+    }
+
+    .product-detail img {
+      width: 100%;
+      max-height: 550px; /* 👈 větší obrázek */
+      border-radius: var(--radius);
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-info h2 {
+      font-size: 26px;
+      margin-top: 0;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 10px 0 20px;
+    }
+
+    .description {
+      color: var(--muted);
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+
+    select {
+      padding: 8px 10px;
+      font-size: 16px;
+      border-radius: var(--radius);
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.2s;
+      width: fit-content;
+    }
+
+    button:hover {
+      background: #1170dd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .product-detail {
+        grid-template-columns: 1fr;
+      }
+
+      .product-detail img {
+        max-height: 350px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylové Oblečení</h1>
+    <nav>
+      <a href="about.html">Domů</a>
+      <a href="obchod.html">Obchod</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="maturita.html">Maturita</a>
+    </nav>
+  </header>
+
+  <section class="product-detail">
+    <img src="https://i00.eu/img/532/550x550f/cb7lkl95/147797.webp" alt="Pánské tričko">
+
+    <div class="product-info">
+      <h2>Pánské tričko</h2>
+      <div class="price">449 Kč</div>
+      <p class="description">
+        Klasické pánské tričko s moderním střihem, které se hodí ke každému outfitu. 
+        Vyrobeno z kvalitní bavlny pro maximální pohodlí a odolnost. 
+        Ideální na volný čas, sport i běžné nošení.
+      </p>
+
+      <label for="size">Velikost:</label>
+      <select id="size">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+        <option>XXL</option>
+      </select>
+
+      <button>Přidat do košíku</button>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Stylové Oblečení – jednoduchý e-shop s módou.
+  </footer>
+</body>
+</html>
