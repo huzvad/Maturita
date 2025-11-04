@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obchod – Stylové Oblečení</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --light-bg: #f4f4f8;
+      --text: #222;
+      --muted: #666;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light-bg);
+      color: var(--text);
+    }
+
+    header {
+      background: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 22px;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      text-align: center;
+      padding: 50px 20px 30px;
+      background: linear-gradient(135deg, #fff, #e8f0ff);
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin: 10px 0;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .product:hover {
+      transform: translateY(-4px);
+    }
+
+    .product img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product h3 {
+      margin: 0 0 6px;
+      font-size: 17px;
+    }
+
+    .price {
+      font-weight: bold;
+      color: var(--text);
+      margin-top: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background: #fff;
+      border-top: 1px solid #ddd;
+      color: var(--muted);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stylové Oblečení</h1>
+    <nav>
+      <a href="about.html">Domů</a>
+      <a href="obchod.html">Obchod</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="maturita.html">Maturita</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Naše nabídka</h2>
+    <p>Vyberte si z nejnovější kolekce stylového oblečení.</p>
+  </section>
+
+  <section class="products">
+    <a href="produkt-mikina-damska.html" class="product">
+      <img src="https://i00.eu/img/542/1024x1024/5jfwrm19/28124.jpg" alt="Dámská mikina">
+      <div class="product-info">
+        <h3>Dámská mikina</h3>
+        <div class="price">899 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-mikina-panska.html" class="product">
+      <img src="https://www.burocs.com/cdn/shop/files/4938-BR2325-Grey-Basic-Oversized-Hoodie1_1.jpg?v=1703159726&width=1428" alt="Pánská mikina">
+      <div class="product-info">
+        <h3>Pánská mikina</h3>
+        <div class="price">999 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-tricko-damske.html" class="product">
+      <img src="https://cdn.myshoptet.com/usr/www.lapetite.cz/user/shop/big/38328_tricko-ragman-403080-bile--velikost-l.jpg?662a6a5a" alt="Dámské tričko">
+      <div class="product-info">
+        <h3>Dámské tričko</h3>
+        <div class="price">399 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-tricko-panske.html" class="product">
+      <img src="https://i00.eu/img/532/550x550f/cb7lkl95/147797.webp" alt="Pánské tričko">
+      <div class="product-info">
+        <h3>Pánské tričko</h3>
+        <div class="price">449 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-kalhoty.html" class="product">
+      <img src="https://cdn.myshoptet.com/usr/www.eleven-sportswear.cz/user/shop/big/290_panske-lehke-sportovni-kalhoty-eleven-sorel-black.jpg?64f6d928" alt="Sportovní kalhoty">
+      <div class="product-info">
+        <h3>Sportovní kalhoty</h3>
+        <div class="price">799 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-cepice.html" class="product">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.VC3aaV6KKOq-ITx2hUgfTQAAAA?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Čepice">
+      <div class="product-info">
+        <h3>Čepice</h3>
+        <div class="price">299 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-ponozky.html" class="product">
+      <img src="https://img-cdn.heureka.group/v1/39185e05-7fb5-57d3-b8b4-536f43285480.jpg" alt="Ponožky">
+      <div class="product-info">
+        <h3>Ponožky</h3>
+        <div class="price">149 Kč</div>
+      </div>
+    </a>
+
+    <a href="produkt-rukavice.html" class="product">
+        <img src="https://www.belabel.cz/products/noprintProductImages/thumbs/6497_1.jpg" alt="Ponožky">
+        <div class="product-info">
+          <h3>Rukavice</h3>
+          <div class="price">99 Kč</div>
+        </div>
+      </a>
+  </section>
+
+  <footer>
+    © 2025 Stylové Oblečení – jednoduchý e-shop s módou.
+  </footer>
+</body>
+</html>
