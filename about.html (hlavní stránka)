@@ -1,5 +1,5 @@
-<!doctype html> <!-- Říká prohlížeči, že používáme moderní HTML5 -->
-<html lang="cs"> <!-- Celý dokument je v češtině (důležité pro SEO a čtečky obrazovky) -->
+<!doctype html>
+<html lang="cs">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -156,9 +156,9 @@
     <h1>Stylové Oblečení</h1>
     <nav>
       <a href="about.html">Domů</a>
-      <a href="about.html">Obchod</a>
+      <a href="obchod.html">Obchod</a>
       <a href="kontakt.html">Kontakt</a>
-      <a href="maturita.html">Maturita</a>
+      <a href="maturita.html">Maturita</a> 
     </nav>
   </header>
 
@@ -174,7 +174,7 @@
       <img src="https://cdn.myshoptet.com/usr/www.lapetite.cz/user/shop/big/38328_tricko-ragman-403080-bile--velikost-l.jpg?662a6a5a"
            alt="tričko">
       <div class="product-info">
-        <h3>Bílé tričko</h3>
+        <h3>Dámské tričko</h3>
         <p>Lehké a příjemné tričko z bavlny.</p>
         <div class="price">399 Kč</div>
         <button>Přidat do košíku</button>
@@ -209,4 +209,3 @@
   </footer>
 </body>
 </html>
-
