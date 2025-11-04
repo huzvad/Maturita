@@ -83,8 +83,8 @@
   <header>
     <h1>Stylové Oblečení</h1>
     <nav>
-      <a href="index.html">Domů</a>
-      <a href="about.html">Obchod</a>
+      <a href="about.html">Domů</a>
+      <a href="obchod.html">Obchod</a>
       <a href="kontakt.html" style="color: var(--primary);">Kontakt</a>
       <a href="maturita.html">Maturita</a>
     </nav>
