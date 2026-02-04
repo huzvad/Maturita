@@ -1,0 +1,22 @@
+# --- IDE a editory (tohle na GitHub nepatří) ---
+.idea/
+.vscode/
+.project
+*.sublime-workspace
+
+# --- Systémové soubory (Windows/Mac smetí) ---
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# --- PHP závislosti (pokud používáš Composer) ---
+/vendor/
+composer.phar
+
+# --- Logy (chybové hlášky serveru) ---
+error_log
+access.log
+*.log
+
+# --- Různé ---
+node_modules/
