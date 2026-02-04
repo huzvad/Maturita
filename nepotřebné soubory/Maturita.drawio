@@ -1,0 +1,62 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.2.6">
+  <diagram name="Stránka-1" id="zBZfqMTpT5tfs7kt2zKW">
+    <mxGraphModel dx="1418" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-1" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D7gfUPGcuwwbdw9MK8r7-3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vytvoření &lt;b&gt;GitHubu&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vytvoření &lt;b&gt;Webu&lt;/b&gt;&amp;nbsp;&lt;div&gt;CSS + HTML (PHP)&lt;/div&gt;&lt;div&gt;______________________________________&lt;br&gt;&lt;div&gt;- Popis Eshopu&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Stránka s oblečením&lt;/div&gt;&lt;div&gt;- Popis oblečení, cena a velikost&lt;/div&gt;&lt;div&gt;- Registrace, Přihlášení a Odhlášení&lt;/div&gt;&lt;div&gt;- Fungující překlikávání na stránkách&lt;/div&gt;&lt;/div&gt;&lt;div&gt;-odkazování na Navbar, footer, style&lt;/div&gt;&lt;div&gt;- Funkční admin&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Funkční Košík&lt;/div&gt;" vertex="1">
+          <mxGeometry height="199.38" width="254" x="210" y="110.31" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Databáze produktů&lt;br&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;- Typ&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- Velikost&lt;/div&gt;&lt;div&gt;-Cena&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="130" x="520" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-5" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="D7gfUPGcuwwbdw9MK8r7-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Téma + autor: &lt;b&gt;Eshop s oblečením&lt;/b&gt;&lt;div&gt;&lt;b&gt;(David Hužvár)&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-7" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Propojit s &lt;b&gt;Pythnem&lt;/b&gt;&lt;div&gt;&lt;b&gt;_________________________&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;- Grafy&amp;nbsp;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="165" x="502.5" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-8" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-7" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="D7gfUPGcuwwbdw9MK8r7-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="430" y="290" as="sourcePoint" />
+            <mxPoint x="480" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-9" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-3" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="D7gfUPGcuwwbdw9MK8r7-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points" />
+            <mxPoint x="370" y="260" as="sourcePoint" />
+            <mxPoint x="420" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-11" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-4" style="endArrow=none;html=1;rounded=0;exitX=0.972;exitY=0.411;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.015;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;elbow=vertical;" target="D7gfUPGcuwwbdw9MK8r7-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="639.9999999999999" y="199.99999999999997" as="sourcePoint" />
+            <mxPoint x="520.36" y="205.34" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-12" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="660" y="210" as="sourcePoint" />
+            <mxPoint x="700" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-18" edge="1" parent="1" source="D7gfUPGcuwwbdw9MK8r7-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="D7gfUPGcuwwbdw9MK8r7-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D7gfUPGcuwwbdw9MK8r7-13" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="Databáze&amp;nbsp; uživatelů&lt;br&gt;_________________________________________________&lt;div&gt;&lt;table&gt;&lt;thead data-start=&quot;3371&quot; data-end=&quot;3396&quot;&gt;&lt;tr data-start=&quot;3371&quot; data-end=&quot;3396&quot;&gt;&lt;th data-start=&quot;3371&quot; data-end=&quot;3381&quot; data-col-size=&quot;sm&quot;&gt;Sloupec------&lt;/th&gt;&lt;th data-start=&quot;3381&quot; data-end=&quot;3387&quot; data-col-size=&quot;sm&quot;&gt;Typ----&lt;/th&gt;&lt;th data-start=&quot;3387&quot; data-end=&quot;3396&quot; data-col-size=&quot;sm&quot;&gt;----&amp;nbsp; Popis&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;3419&quot; data-end=&quot;3447&quot;&gt;&lt;td data-start=&quot;3419&quot; data-end=&quot;3424&quot; data-col-size=&quot;sm&quot;&gt;id-----&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3424&quot; data-end=&quot;3430&quot;&gt;INT-------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3430&quot; data-end=&quot;3447&quot;&gt;primární klíč&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;3448&quot; data-end=&quot;3490&quot;&gt;&lt;td data-start=&quot;3448&quot; data-end=&quot;3459&quot; data-col-size=&quot;sm&quot;&gt;username-----&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3459&quot; data-end=&quot;3469&quot;&gt;VARCHAR-------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3469&quot; data-end=&quot;3490&quot;&gt;uživatelské jméno&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;3491&quot; data-end=&quot;3538&quot;&gt;&lt;td data-start=&quot;3491&quot; data-end=&quot;3507&quot; data-col-size=&quot;sm&quot;&gt;password_hash------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3507&quot; data-end=&quot;3517&quot;&gt;VARCHAR-------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3517&quot; data-end=&quot;3538&quot;&gt;zahashované heslo&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;3539&quot; data-end=&quot;3572&quot;&gt;&lt;td data-start=&quot;3539&quot; data-end=&quot;3546&quot; data-col-size=&quot;sm&quot;&gt;role-----&lt;/td&gt;&lt;td data-start=&quot;3546&quot; data-end=&quot;3556&quot; data-col-size=&quot;sm&quot;&gt;VARCHAR-------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3556&quot; data-end=&quot;3572&quot;&gt;user / admin&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr data-start=&quot;3573&quot; data-end=&quot;3618&quot;&gt;&lt;td data-start=&quot;3573&quot; data-end=&quot;3586&quot; data-col-size=&quot;sm&quot;&gt;created_at------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3586&quot; data-end=&quot;3598&quot;&gt;TIMESTAMP------&lt;/td&gt;&lt;td data-col-size=&quot;sm&quot; data-start=&quot;3598&quot; data-end=&quot;3618&quot;&gt;datum registrace&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="165" width="350" x="700" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

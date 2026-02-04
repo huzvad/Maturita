@@ -1,0 +1,173 @@
+/* =====================================================
+   GLOBÁLNÍ PROMĚNNÉ (CSS VARIABLES)
+   ===================================================== */
+   :root {
+    --primary: #1e90ff;      /* hlavní barva webu */
+    --light-bg: #f4f4f8;     /* světlé pozadí */
+    --text: #222;            /* základní barva textu */
+    --muted: #666;           /* tlumený text */
+    --radius: 10px;          /* zaoblení rohů */
+  }
+  
+  /* Započítání paddingu a borderu do šířky prvků */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* =====================================================
+     ZÁKLADNÍ NASTAVENÍ STRÁNKY
+     ===================================================== */
+  body {
+    margin: 0; /* odstranění výchozího okraje */
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--light-bg);
+    color: var(--text);
+  }
+  
+  /* =====================================================
+     HEADER (HLAVIČKA)
+     ===================================================== */
+  header {
+    background: #fff;
+    padding: 13px 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  header h1 {
+    font-size: 22px;
+    margin: 0;
+    color: var(--primary);
+  }
+  
+  /* Odkazy v navigaci */
+  nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+  }
+  
+  /* Odkaz s uživatelem */
+  nav a.user {
+    font-weight: bold;
+    color: #2ecc71;
+  }
+  
+  /* Hover efekt na odkazy */
+  nav a:hover {
+    color: var(--primary);
+  }
+  
+  /* =====================================================
+     HERO SEKCE
+     ===================================================== */
+  .hero {
+    text-align: center;
+    padding: 50px 20px 30px;
+    background: linear-gradient(135deg, #fff, #e8f0ff);
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+    margin: 10px 0;
+  }
+  
+  .hero p {
+    color: var(--muted);
+    font-size: 16px;
+  }
+  
+  /* Tlačítko v hero sekci */
+  .hero button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .hero button:hover {
+    background: #0f6de0;
+  }
+  
+  /* =====================================================
+     PRODUKTY / KOŠÍK
+     ===================================================== */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  /* Jedna produktová karta */
+  .product {
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Hover efekt – lehké nadzvednutí */
+  .product:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Obrázek produktu */
+  .product img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+  }
+  
+  /* Textová část produktu */
+  .product-info {
+    padding: 15px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+  }
+  
+  .product p {
+    color: var(--muted);
+    font-size: 14px;
+  }
+  
+  /* Cena – posunutá dolů */
+  .price {
+    font-weight: bold;
+    margin-top: auto;
+  }
+  
+  /* =====================================================
+     FOOTER (PATIČKA)
+     ===================================================== */
+  footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    color: var(--muted);
+    margin-top: 40px;
+  }
+  
+
