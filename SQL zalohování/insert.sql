@@ -25,7 +25,7 @@ INSERT INTO `Zbozi` (`Typ`, `Velikost`,`Cena`) VALUES
 ('Sportovní kalhoty ', 'L ', 799 ),
 ('Sportovní kalhoty ', 'XL ', 799 ),
 
-('Čepice ', 'Univerzální ', 299 ), 
+('Čepice ', 'Univerzální ', 299 ),
 ('Čepice ', 'Dětská ', 299 ),
 
 ('Ponožky ', '36-38 ', 149 ), 

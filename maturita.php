@@ -23,12 +23,11 @@ include "navbar.php";
       <h3>Stručný popis projektu</h3>
       <p>
         Webová aplikace <strong>Stylové Oblečení</strong> představuje jednoduchý e-shop zaměřený na moderní a pohodlnou módu.
-        Projekt slouží jako ukázka propojení <strong>frontendové části (HTML, CSS, PHP)</strong> s <strong>backendem v Pythonu (kde se vytvářejí grafy) </strong> a <strong>My SQL databází (session) </strong>,
+        Projekt slouží jako ukázka propojení <strong>frontendové části (HTML, CSS, PHP)</strong> s <strong> Pythonem (kde se vytvářejí grafy) </strong> a <strong>My SQL databází (session) </strong>,
         která uchovává informace o produktech a zákaznících.
       </p>
       <p>
-        Stránky jsou vytvořeny v <strong>PHP a HTML</strong> a stylovány pomocí <strong>CSS</strong>. Web je responzivní a správně se zobrazuje
-        jak na počítači, tak na mobilních zařízeních. Zároveň má registraci a přihlášení uživatele, role, zobrazení produktů, přidání a odebrání z košíku, výpočet ceny košíku, admin panel.
+        Stránky jsou vytvořeny v <strong>PHP a HTML</strong> a stylovány pomocí <strong>CSS</strong>. Web je responzivní a správně se zobrazuje, zároveň má registraci a přihlášení uživatele, role, zobrazení produktů, přidání a odebrání z košíku, výpočet ceny košíku, admin panel.
       </p>
     </section>
 
@@ -62,7 +61,7 @@ include "navbar.php";
         <li><strong>Frontend:</strong> HTML5, CSS3 (responzivní design, CSS proměnné)</li>
         <li><strong>Backend:</strong> PHP </li>
         <li><strong>Databáze:</strong> SQL – tabulky pro produkty, uživatele a objednávky, požíváme dbs.spskladno.cz </li>
-        <li><strong>Propojení:</strong> Python komunikuje s databází přes API endpointy </li> 
+        <li><strong>Propojení:</strong> Python komunikuje s databází napřímo </li> 
       </ul>
     </section>
 
