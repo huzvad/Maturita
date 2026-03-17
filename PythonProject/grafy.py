@@ -1,40 +1,38 @@
 import matplotlib.pyplot as plt
-from db import get_avg_prices
-"""
-    Připojí se k databázi MySQL a vypočítá průměrnou cenu 
-    pro jednotlivé kategorie zboží pomocí SQL funkce AVG().
-    Vrací seznam n-tic (typ, průměrná_cena).
- """ 
+from db import get_avg_prices # Importujeme funkci pro průměrné ceny
 
-# Nastavení stylu (podobný tomu, co jsi poslal, ale čistší pro sloupce)
-plt.style.use('ggplot')
+def zobraz_graf():
+    """
+    Tato funkce načte data z databáze a vykreslí graf.
+    Vložením kódu do funkce splníme požadavek na modularitu.
+    """
+    # 1. Načtení dat z DB (voláme funkci z db.py)
+    data = get_avg_prices()
 
-# Načtení reálných dat z databáze
-data = get_avg_prices()
+    # Příprava dat pro osy X a Y
+    # TRIM() v SQL nám zajistí čisté názvy bez mezer
+    typy = [row[0] for row in data]
+    ceny = [float(row[1]) for row in data]
 
-# Rozdělení dat pro graf
-typy = [row[0] for row in data]
-prumerne_ceny = [float(row[1]) for row in data]
+    # 2. Nastavení a vykreslení grafu
+    plt.figure(figsize=(10, 6))
+    plt.style.use('ggplot') # Použití moderního stylu
+    
+    bars = plt.bar(typy, ceny, color='#1e90ff')
 
-# Vytvoření grafu
-fig, ax = plt.subplots(figsize=(10, 6))
+    # Přidání popisků přímo nad sloupce (vylepšení pro investora)
+    plt.bar_label(bars, fmt='%.0f Kč', padding=3)
 
-# Vykreslení sloupců s barvou "SkyBlue"
-bars = ax.bar(typy, prumerne_ceny, color='#1e90ff', edgecolor='#0b53a7')
+    plt.title("Průměrná hodnota zboží podle kategorie")
+    plt.xlabel("Kategorie")
+    plt.ylabel("Průměrná cena (Kč)")
 
-# Přidání popisků s cenou přímo nad sloupce
-ax.bar_label(bars, fmt='%.0f Kč', padding=3, fontsize=10, fontweight='bold')
+    plt.xticks(rotation=30, ha='right')
+    plt.tight_layout()
+    
+    # 3. Zobrazení okna s grafem
+    plt.show()
 
-# Nastavení popisků a titulků
-ax.set_title("Průměrná hodnota zboží podle kategorie", fontsize=15, pad=20, fontweight='bold')
-ax.set_ylabel("Průměrná cena (Kč)", fontsize=12)
-ax.set_xlabel("Kategorie produktu", fontsize=12)
-
-# Otočení popisků na ose X, aby se text nepřekrýval
-plt.xticks(rotation=30, ha='right')
-
-# Automatické upravení okrajů
-plt.tight_layout()
-
-# Zobrazení grafu
-plt.show()
+# Tato podmínka zajistí, že se graf zobrazí, i když soubor spustíš přímo
+if __name__ == "__main__":
+    zobraz_graf()
