@@ -1,139 +1,147 @@
-:root {
-  --primary: #1e90ff;
-  --light-bg: #f4f4f8;
-  --text: #222;
-  --muted: #666;
-  --radius: 10px;
+:root { 
+  /* :root je hlavní selektor. Zde si definuješ vlastní "proměnné", které pak používáš všude jinde. 
+     Když budeš chtít změnit barvu e-shopu, změníš ji jen tady a přepíše se všude. */
+  --primary: #1e90ff; /* Hlavní modrá barva (např. pro tlačítka a nadpisy) */
+  --light-bg: #f4f4f8; /* Světle šedá barva pro pozadí celé stránky */
+  --text: #222; /* Tmavě šedá barva hlavního textu (lépe se čte než čistě černá #000) */
+  --muted: #666; /* Světlejší šedá barva pro méně důležité texty (popisky) */
+  --radius: 10px; /* Hodnota pro zaoblení rohů, aby byla všude na webu stejná */
 }
 
-* {
-  box-sizing: border-box;
+* { 
+  /* Hvězdička znamená "aplikuj na úplně všechny prvky na webu" */
+  box-sizing: border-box; /* Extrémně důležité: Zaručí, že vnitřní okraje (padding) a rámečky nezvětší celkovou nastavenou šířku prvků. Nerozhodí ti to layout. */
 }
 
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: var(--light-bg);
-  color: var(--text);
+  margin: 0; /* Vymaže výchozí okraje prohlížeče, aby web sahal až do krajů obrazovky */
+  font-family: 'Segoe UI', sans-serif; /* Nastaví moderní, bezpatkové písmo (výchozí např. ve Windows) */
+  background: var(--light-bg); /* Použije proměnnou pro barvu pozadí definovanou nahoře */
+  color: var(--text); /* Použije proměnnou pro barvu textu */
 }
 
 header {
-  background: #fff;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background: #fff; /* Bílé pozadí pro hlavičku */
+  padding: 15px 30px; /* Vnitřní okraje: 15px nahoře/dole, 30px vlevo/vpravo */
+  display: flex; /* Zapne Flexbox - moderní nástroj pro zarovnávání prvků vedle sebe */
+  justify-content: space-between; /* Roztáhne prvky (Logo a Menu) co nejdál od sebe na kraje */
+  align-items: center; /* Srovná prvky vertikálně přesně na střed */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* Přidá hlavičce jemný stín směrem dolů, aby se oddělila od pozadí */
 }
 
 header h1 {
-  font-size: 22px;
-  margin: 0;
-  color: var(--primary);
+  font-size: 22px; /* Velikost hlavního nadpisu (názvu e-shopu) */
+  margin: 0; /* Odstraní výchozí vnější okraje nadpisu */
+  color: var(--primary); /* Obarví nadpis hlavní modrou barvou */
 }
 
 nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
+  margin-left: 15px; /* Udělá mezeru 15px nalevo od každého odkazu v menu */
+  text-decoration: none; /* Odstraní výchozí podtržení odkazů */
+  color: var(--text); /* Nastaví barvu odkazů na tmavě šedou */
+  font-weight: 600; /* Udělá text odkazů trochu tučnější (polotučné) */
 }
 
 nav a:hover {
-  color: var(--primary);
+  /* Co se stane, když na odkaz najedeš myší (hover) */
+  color: var(--primary); /* Barva textu se změní na hlavní modrou */
 }
 
 .product-detail {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  background: #fff;
-  border-radius: var(--radius);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  align-items: center;
+  max-width: 1000px; /* Omezí maximální šířku kontejneru na 1000px, aby nebyl na velkých monitorech zbytečně roztažený */
+  margin: 40px auto; /* Vycentruje kontejner na střed obrazovky (auto) a přidá 40px mezeru nahoře a dole */
+  padding: 0 20px; /* Přidá vnitřní okraj 20px po stranách, aby text nebyl nalepený na hraně na malých displejích */
+  display: grid; /* Zapne CSS Grid - pokročilý mřížkový systém pro rozvržení stránky */
+  grid-template-columns: 1fr 1fr; /* Rozdělí kontejner na 2 stejně široké sloupce (1 frakce a 1 frakce) */
+  gap: 40px; /* Udělá 40px mezeru mezi těmito dvěma sloupci */
+  background: #fff; /* Bílé pozadí pro detail produktu */
+  border-radius: var(--radius); /* Zaoblí rohy podle proměnné (10px) */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* Přidá jemný stín kolem celého bloku s produktem */
+  align-items: center; /* Zarovná obrázek a text vertikálně na střed vůči sobě */
 }
 
 .product-detail img {
-  width: 100%;
-  max-height: 550px;
-  border-radius: var(--radius);
-  object-fit: cover;
-  object-position: center;
+  width: 100%; /* Obrázek se roztáhne přes celou šířku svého levého sloupce */
+  max-height: 550px; /* Obrázek nebude nikdy vyšší než 550px */
+  border-radius: var(--radius); /* Zaoblí rohy obrázku */
+  object-fit: cover; /* Geniální vlastnost: Pokud má obrázek jiný poměr stran, ořízne se tak, aby vyplnil prostor a nedeformoval se */
+  object-position: center; /* Zaručí, že při ořezu zůstane vidět střed obrázku */
 }
 
 .product-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: flex; /* Zapne Flexbox pro pravý sloupec (s texty) */
+  flex-direction: column; /* Poskládá prvky (nadpis, cena, popis, tlačítko) pod sebe do sloupce */
+  justify-content: center; /* Zarovná celý tento textový blok vertikálně na střed */
 }
 
 .product-info h2 {
-  font-size: 26px;
-  margin-top: 0;
+  font-size: 26px; /* Nastaví velikost nadpisu produktu */
+  margin-top: 0; /* Odstraní mezeru nad nadpisem, aby lícoval s horním okrajem */
 }
 
 .price {
-  font-size: 22px;
-  font-weight: bold;
-  margin: 10px 0 20px;
+  font-size: 22px; /* Zvětší písmo ceny */
+  font-weight: bold; /* Udělá cenu tučnou */
+  margin: 10px 0 20px; /* Mezery: 10px nahoře, 0 vlevo/vpravo, 20px dole */
 }
 
 .description {
-  color: var(--muted);
-  line-height: 1.5;
-  margin-bottom: 20px;
+  color: var(--muted); /* Obarví popisek světlejší šedou barvou */
+  line-height: 1.5; /* Zvětší řádkování (1.5x velikost písma) pro lepší čitelnost delšího textu */
+  margin-bottom: 20px; /* Odsadí popisek od prvků, které jsou pod ním (od formuláře) */
 }
 
 label {
-  font-weight: 600;
-  margin-bottom: 8px;
-  display: inline-block;
+  font-weight: 600; /* Udělá nápis "Velikost:" polotučný */
+  margin-bottom: 8px; /* Odsadí popisek od samotného vybíracího pole */
+  display: inline-block; /* Zajistí, že se na něj dají aplikovat horní/spodní okraje (margin) */
 }
 
 select {
-  padding: 8px 10px;
-  font-size: 16px;
-  border-radius: var(--radius);
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-  outline: none;
+  padding: 8px 10px; /* Vnitřní okraje vybíracího pole (aby nebylo tak úzké) */
+  font-size: 16px; /* Velikost textu uvnitř výběru velikosti */
+  border-radius: var(--radius); /* Zaoblí rohy rozbalovacího menu */
+  border: 1px solid #ccc; /* Přidá tenký světle šedý rámeček */
+  margin-bottom: 20px; /* Odsadí výběr velikosti od tlačítka "Přidat do košíku" */
+  outline: none; /* Odstraní ten ošklivý modrý rámeček, co některé prohlížeče dělají po kliknutí */
 }
 
 button {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: background 0.2s;
-  width: fit-content;
+  background: var(--primary); /* Obarví tlačítko na modro */
+  color: #fff; /* Bílý text na tlačítku */
+  border: none; /* Odstraní výchozí rámeček tlačítka */
+  padding: 12px 20px; /* Udělá tlačítko hezky velké a klikatelné */
+  font-size: 16px; /* Velikost textu v tlačítku */
+  border-radius: var(--radius); /* Zaoblí rohy tlačítka */
+  cursor: pointer; /* Změní kurzor myši na "ručičku", aby uživatel poznal, že se na to dá kliknout */
+  transition: background 0.2s; /* Udělá plynulou animaci (za 0.2 sekundy), když se mění barva pozadí */
+  width: fit-content; /* Tlačítko se roztáhne jen tak, aby obalilo svůj text (nebude přes celý sloupec) */
 }
 
 button:hover {
-  background: #1170dd;
+  /* Co se stane při najetí myší na tlačítko */
+  background: #1170dd; /* Změní barvu pozadí na mírně tmavší modrou */
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
-  background: #fff;
-  border-top: 1px solid #ddd;
-  color: var(--muted);
-  margin-top: 40px;
+  text-align: center; /* Vycentruje text v patičce na střed */
+  padding: 20px; /* Vnitřní okraj patičky */
+  font-size: 14px; /* Menší písmo pro patičku */
+  background: #fff; /* Bílé pozadí */
+  border-top: 1px solid #ddd; /* Přidá tenkou šedou linku nad patičkou, aby se oddělila od obsahu */
+  color: var(--muted); /* Světlejší šedá barva pro text copyrightu */
+  margin-top: 40px; /* Odsadí patičku 40px dolů od zbytku stránky */
 }
 
+/* MEDIA QUERIES (Responzivita - přizpůsobení pro mobily) */
 @media (max-width: 768px) {
+  /* Tento blok kódu se aktivuje POUZE, pokud je šířka obrazovky menší nebo rovna 768px (mobily a menší tablety) */
+  
   .product-detail {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Změní CSS Grid ze 2 sloupců pouze na 1 sloupec (text se přesune pod obrázek) */
   }
 
   .product-detail img {
-    max-height: 350px;
+    max-height: 350px; /* Zmenší maximální výšku obrázku, aby na mobilu nezabral celou obrazovku, než se dostaneš k textu */
   }
 }
