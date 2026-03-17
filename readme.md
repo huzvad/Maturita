@@ -1,7 +1,7 @@
 E-shop: Stylové Oblečení
 Autor: David Hužvár
 
-Technologie: PHP 8+, MySQL (MariaDB), Python 3.x, HTML5, CSS3
+Technologie: PHP 8+, MySQL, Python 3.x, HTML5, CSS3
 
 Stručný popis projektu
 Projekt představuje moderní, odlehčený e-shop zaměřený na prodej módy. Systém je postaven jako Full-stack aplikace, kde webové rozhraní (PHP) slouží k prodeji a uživatelské interakci, zatímco analytická část (Python) zpracovává obchodní data přímo z databáze a vizualizuje je do grafů.
@@ -9,8 +9,9 @@ Projekt představuje moderní, odlehčený e-shop zaměřený na prodej módy. S
 Jak projekt spustit
 1. Webová část (PHP)
 Vstupní soubor: about.php (Hlavní domovská stránka).
+Pro graf je to main.py.
 
-Server: Vyžaduje webový server s podporou PHP (např. Apache/Nginx) a přístup k MySQL databázi na serveru dbs.spskladno.cz.
+Server: Vyžaduje webový server s podporou PHP  a přístup k MySQL databázi na serveru dbs.spskladno.cz.
 
 Konfigurace: Přihlašovací údaje k databázi jsou uloženy přímo v PHP souborech (např. v login.php nebo admin.php).
 
