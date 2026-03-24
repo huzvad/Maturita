@@ -61,7 +61,19 @@ Analytik: Spustí grafy.py, čímž se vygeneruje sloupcový graf průměrných 
 .
 .
 .
+.
+.
+.
+.
+.
+.
+
+.
+.
 vysvětlení jednotlivých souborů:
+
+
+
 🌐 Webová část (PHP & HTML)
 about.php (nebo index.php)
 
